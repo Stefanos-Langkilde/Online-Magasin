@@ -1,0 +1,393 @@
+body {
+    font: 12px/18px Arial, sans-serif;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 130%;
+    line-height: 1.43;
+}
+
+
+header,
+main,
+footer {
+    padding: 2%;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 150%;
+}
+
+h2 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 140%;
+}
+
+h3 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 130%;
+}
+
+#navigation-desktop {
+    display: none;
+}
+
+.burger {
+    width: 35px;
+    height: 4px;
+    background-color: black;
+    margin: 5px;
+}
+
+#navigation-icon {
+    display: inline-block;
+    float: right;
+    padding-right: 2%;
+}
+
+#navigation-mobile {
+    text-align: center;
+    font-size: 140%;
+
+}
+
+#navigation-mobile li {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-bottom: 1px solid #ccc;
+}
+
+#navigation-mobile li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.tekst-centrum {
+    text-align: center;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+    height: auto;
+    background-color: #F5F5F5;
+    clear: both;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+#content {
+    background-color: #F5F5F5;
+}
+
+#flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+    height: auto;
+    background-color: #BB0000;
+    color: white;
+}
+
+address {
+    text-align: center;
+}
+
+@media only screen and (min-width: 320px) {
+    #logo {
+
+        width: 75px;
+        height: 75px;
+        padding-left: 4%;
+
+    }
+
+    #flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+
+    #header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    #centralen {
+        font-size: 200%;
+        font-weight: bold;
+        margin-top: 9%;
+        margin-left: 4%;
+    }
+
+    h1 {
+        font-size: 250%;
+        margin-bottom: 4%;
+    }
+
+    h2 {
+        font-size: 200%;
+        padding: 3%;
+        line-height: 1.30;
+    }
+
+    h3 {
+        font-size: 150%;
+        margin: 2% 0 2% 0;
+    }
+
+
+
+    p {
+        font-size: 150%;
+        width: 90%;
+        margin: auto;
+        text-align: left;
+        padding: 0 2% 2% 2%;
+        font-weight: 500;
+    }
+
+    section {
+        border-top: 2px solid #BB0000;
+        border-bottom: 2px solid #BB0000;
+        padding-bottom: 2%;
+    }
+
+    /* billede kolonde */
+    #img-s {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        border-top: none;
+        padding-top: 2%;
+        margin-top: 2%;
+    }
+
+    #house {
+        padding-bottom: 2%;
+        align-self: center;
+        display: flex;
+        flex-wrap: nowrap;
+        width: 80%;
+    }
+
+    #sakura {
+        padding-top: 2%;
+        align-self: center;
+        display: flex;
+        flex-wrap: nowrap;
+        width: 80%;
+    }
+}
+
+/* billede kolonde slut */
+
+
+
+@media only screen and (min-width: 500px) {
+
+    img {
+        width: 100%;
+    }
+
+    #flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #logo {
+
+        width: 18%;
+        height: 18%;
+    }
+
+    #centralen {
+        margin-top: 5%;
+        margin-left: 10%;
+        font-size: 300%;
+        padding-top: 2%;
+    }
+
+    p {
+        font-size: 160%;
+        font-weight: 400;
+        width: 80%;
+        padding: 0 2% 2% 2%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    img {
+        width: 100%;
+    }
+
+    #flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #navigation-icon {
+        display: none;
+    }
+
+    #navigation-mobile {
+        display: none;
+    }
+
+    #logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    #centralen {
+
+        padding-left: 6%;
+    }
+
+    #navigation-desktop {
+        display: block;
+        text-align: right;
+        font-size: 130%;
+        font-weight: 500;
+        width: 100%;
+    }
+
+    #navigation-desktop li {
+        display: inline;
+        padding-left: 1%;
+    }
+
+    .dropbtn {
+        background-color: #BB0000;
+        color: white;
+        padding: 16px;
+        font-size: 100%;
+        border: none;
+        cursor: pointer;
+        border-radius: 25px;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #BB0000;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        text-align: left;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #7E1919;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #7E1919;
+    }
+
+    #house {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 43%;
+        padding: 0;
+        margin: auto
+    }
+
+    #sakura {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 40%;
+        padding: 0;
+        margin: auto;
+    }
+
+    #img-s {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    img {
+        width: 100%;
+    }
+
+    #header {
+        padding-bottom: 0%;
+    }
+
+    p {
+        font-size: 200%;
+    }
+
+    #navigation-icon {
+        display: none;
+    }
+
+    #navigation-mobile {
+        display: none;
+    }
+
+    #navigation-desktop {
+        margin-right: 15%;
+    }
+
+    #centralen {
+        font-size: 400%;
+        margin-top: 1%;
+    }
+
+    #img-s {
+        margin: auto;
+        width: 80%;
+    }
+
+
+}
